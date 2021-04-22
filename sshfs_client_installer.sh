@@ -19,7 +19,7 @@ read IP
 echo "PLEASE GIVE THE SERVER NAME"
 read SNAME
 echo "CONNECTING AS ROOT"
-sudo sshfs $SNAME@$IP:/home/$NAME /home/$NAME/$WD
+sudo sshfs $SNAME@$IP:/home/$SNAME /home/$SNAME/$WD
 elif [ $ANS == "no" ];then
 echo "CLOSING SCRIPT..."
 fi
@@ -31,7 +31,7 @@ if [ $ANSW == "yes" ]; then
 sudo fusermount -u /home/$SNAME/$WD
 sleep 1
 echo "DISCONNECTED"
-elif [ $ANS == "no" ];then
+elif [ $ANSW == "no" ];then
 echo "CLOSING SCRIPT..."
 fi
 

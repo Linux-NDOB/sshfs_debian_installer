@@ -5,8 +5,8 @@ sudo apt-get install openssh-server openssh-client
 
 echo "FOR CLIENT"
 
-echo "INSTALL SSHF AND FUSE"
-sudo apt-get install sshfs fuse
+echo "INSTALL SSHF, FUSE, MEMBERS"
+sudo apt-get install sshfs fuse members
 
 echo "COMPROBING IF FUSE MODULE IS ACTIVE"
 lsmod | grep fuse
